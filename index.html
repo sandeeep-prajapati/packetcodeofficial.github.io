@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>AWESOME NOTES</title>
+    
+</head>
+<body>
+  <div class="container">
+
+  <nav class="navbar navbar-expand-lg bg-success my-3">
+      <div class="container-fluid">
+          <a class="navbar-brand text-white" href="#">NOTE_ME</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" style="padding-left: 60%;" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <!-- <li class="nav-item">
+                    <a class="text-white nav-link active" aria-current="page" href="#"></a>
+                  </li> -->
+                  <form class="d-flex my-search-bar" role="search">
+                    <input id="searchTxt" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-dark" type="submit">Search</button>
+              </form>
+          </div>
+      </div>
+  </nav>
+  <h1 class="my-5 text-center">Welcome to my grand notes</h1>
+  <div class="card mx-5">
+    <div class="card-body text-center">
+        <h5 class="card-title">add note here</h5>
+        <textarea id="addTxt" rows="4" class="form-control notes" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+        <button id="addBtn" href="#" class="btn btn-primary">add your note</button>
+      </div>
+  </div>
+  <div id="notes" class="notesCard mx-3 my-5 row container-fluid">
+    
+    </div>
+    
+  </div>
+
+
+</div>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
